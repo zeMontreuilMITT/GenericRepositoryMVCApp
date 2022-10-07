@@ -15,7 +15,6 @@ namespace GenericRepositoryMVCApp.Controllers
     public class BankAccountsController : Controller
     {
         private readonly AccountBusinessLogic accountBL;
-
         public BankAccountsController(GenericRepositoryMVCAppContext context)
         {
             accountBL = new AccountBusinessLogic(new AccountRepository(context));
@@ -27,23 +26,9 @@ namespace GenericRepositoryMVCApp.Controllers
             return View(accountBL.GetAllBankAccounts());
         }
 
-        // GET: BankAccounts/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult GetAccountsUnder(int value)
         {
-            if (id == null || _context.BankAccount == null)
-            {
-                return NotFound();
-            }
-
-            var bankAccount = await _context.BankAccount
-                .Include(b => b.Customer)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (bankAccount == null)
-            {
-                return NotFound();
-            }
-
-            return View(bankAccount);
+            return View(accountBL.GetAllAccountsUnderValue(value));
         }
 
         // GET: BankAccounts/Create
