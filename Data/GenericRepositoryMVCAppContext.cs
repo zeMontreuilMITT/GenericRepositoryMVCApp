@@ -14,7 +14,12 @@ namespace GenericRepositoryMVCApp.Data
         {
         }
 
-        public DbSet<GenericRepositoryMVCApp.Models.BankAccount> BankAccount { get; set; } = default!;
-        public DbSet<Customer> Customers { get; set; }
+        public GenericRepositoryMVCAppContext()
+        {
+
+        }
+
+        public virtual DbSet<GenericRepositoryMVCApp.Models.BankAccount> BankAccount { get; set; } = default!;
+        public virtual DbSet<Customer> Customers { get; set; }
     }
 }

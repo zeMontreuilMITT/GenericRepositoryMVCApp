@@ -11,3 +11,4 @@ namespace GenericRepositoryMVCApp.Models
         public Customer Customer { get; set; }
     }
 }
+

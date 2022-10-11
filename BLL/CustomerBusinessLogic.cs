@@ -15,5 +15,15 @@ namespace GenericRepositoryMVCApp.BLL
         {
             return _repo.GetList(customer => customer.FullName.StartsWith(nameStart)).ToList();
         }
+
+        public Customer GetCustomerStartingWith(string nameStart)
+        {
+            return _repo.Get(customer => customer.FullName.StartsWith(nameStart));
+        }
+
+        public ICollection<Customer> GetCustomers()
+        {
+            return _repo.GetAll();
+        }
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepositoryMVCApp", "GenericRepositoryMVCApp.csproj", "{6394EA0F-075B-4DF1-9FBB-251273E8201E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepositoryMVCApp", "GenericRepositoryMVCApp.csproj", "{6394EA0F-075B-4DF1-9FBB-251273E8201E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepoTests", "..\GenericRepoTests\GenericRepoTests.csproj", "{18F7D5CB-6CA0-4001-8926-922BDED57F28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6394EA0F-075B-4DF1-9FBB-251273E8201E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6394EA0F-075B-4DF1-9FBB-251273E8201E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6394EA0F-075B-4DF1-9FBB-251273E8201E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F7D5CB-6CA0-4001-8926-922BDED57F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F7D5CB-6CA0-4001-8926-922BDED57F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F7D5CB-6CA0-4001-8926-922BDED57F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F7D5CB-6CA0-4001-8926-922BDED57F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
